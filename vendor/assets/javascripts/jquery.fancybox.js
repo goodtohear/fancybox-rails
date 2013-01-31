@@ -9,6 +9,7 @@
  *
  * Version: 1.3.4 (11/11/2010)
  * Requires: jQuery v1.3+
+ * NOTE: This version was patched to work with jQuery v1.9+
  *
  * Dual licensed under the MIT and GPL licenses:
  *   http://www.opensource.org/licenses/mit-license.php
@@ -26,7 +27,8 @@
 
 		titleHeight = 0, titleStr = '', start_pos, final_pos, busy = false, fx = $.extend($('<div/>')[0], { prop: 0 }),
 
-		isIE6 = $.browser.msie && $.browser.version < 7 && !window.XMLHttpRequest,
+		isIE6 = navigator.userAgent.match(/msie/i) && navigator.userAgent.match(/6/) && !window.XMLHttpRequest,
+
 
 		/*
 		 * Private methods 

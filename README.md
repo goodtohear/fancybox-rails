@@ -4,6 +4,10 @@ fancybox-rails
 
 Use [fancybox 1.3.4](http://fancybox.net/) with rails 3.1 asset pipeline.
 
+## Note
+
+In this fork Fancybox 1.3.4 was patched to work with jQuery 1.9+, see [this Stackoverflow solution](http://stackoverflow.com/a/14344290).
+
 ## Installation
 
 This gem vendors jquery fancybox for Rails 3.1 and greater. The files
